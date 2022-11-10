@@ -79,4 +79,25 @@ describe('lib/auto-scenario-config-for-ember', () => {
       expect(config.scenarios).toMatchSnapshot();
     });
   });
+  test('returns only requested versions', () => {
+    let availableVersions = [
+      '2.11.0',
+      '2.12.0',
+      '2.12.2',
+      '2.13.0',
+      '2.18.0',
+      '3.0.0',
+      '3.1.0',
+      '3.1.1',
+    ];
+
+    return autoScenarioConfigForEmber({
+      onlyVersionCompatibility: true,
+      versionCompatibility: { ember: '2.11.0 - 2.12.7 || ~ 3.1.0 || ^2.18.0' },
+      availableVersions,
+      getChannelURL: fakeGetChannelUrl,
+    }).then((config) => {
+      expect(config.scenarios).toMatchSnapshot();
+    });
+  });
 });
