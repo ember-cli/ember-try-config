@@ -15,6 +15,9 @@ Array [
       "devDependencies": Object {
         "ember-source": "https://emberjs.example.com/beta-1234.tgz",
       },
+      "overrides": Object {
+        "ember-source": "$ember-source",
+      },
     },
   },
   Object {
@@ -24,6 +27,9 @@ Array [
       "devDependencies": Object {
         "ember-source": "https://emberjs.example.com/canary-1234.tgz",
       },
+      "overrides": Object {
+        "ember-source": "$ember-source",
+      },
     },
   },
   Object {
@@ -31,6 +37,9 @@ Array [
     "npm": Object {
       "devDependencies": Object {
         "ember-source": "https://emberjs.example.com/release-1234.tgz",
+      },
+      "overrides": Object {
+        "ember-source": "$ember-source",
       },
     },
   },
@@ -40,6 +49,9 @@ Array [
       "devDependencies": Object {
         "ember-source": "2.11.0",
       },
+      "overrides": Object {
+        "ember-source": "$ember-source",
+      },
     },
   },
   Object {
@@ -47,6 +59,9 @@ Array [
     "npm": Object {
       "devDependencies": Object {
         "ember-source": "2.12.2",
+      },
+      "overrides": Object {
+        "ember-source": "$ember-source",
       },
     },
   },
@@ -56,6 +71,9 @@ Array [
       "devDependencies": Object {
         "ember-source": "2.18.0",
       },
+      "overrides": Object {
+        "ember-source": "$ember-source",
+      },
     },
   },
   Object {
@@ -63,6 +81,9 @@ Array [
     "npm": Object {
       "devDependencies": Object {
         "ember-source": "3.1.1",
+      },
+      "overrides": Object {
+        "ember-source": "$ember-source",
       },
     },
   },
