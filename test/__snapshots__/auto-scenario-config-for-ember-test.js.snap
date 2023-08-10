@@ -1,5 +1,96 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`lib/auto-scenario-config-for-ember dependency version heuristics using ember-source < 4.0 adds ember-cli as dependency 1`] = `
+Array [
+  Object {
+    "name": "default",
+    "npm": Object {
+      "devDependencies": Object {},
+    },
+  },
+  Object {
+    "allowedToFail": true,
+    "name": "ember-beta",
+    "npm": Object {
+      "devDependencies": Object {
+        "ember-source": "https://emberjs.example.com/beta-1234.tgz",
+      },
+    },
+  },
+  Object {
+    "allowedToFail": true,
+    "name": "ember-canary",
+    "npm": Object {
+      "devDependencies": Object {
+        "ember-source": "https://emberjs.example.com/canary-1234.tgz",
+      },
+    },
+  },
+  Object {
+    "name": "ember-release",
+    "npm": Object {
+      "devDependencies": Object {
+        "ember-source": "https://emberjs.example.com/release-1234.tgz",
+      },
+    },
+  },
+  Object {
+    "name": "ember-3.28.0",
+    "npm": Object {
+      "devDependencies": Object {
+        "ember-cli": "~4.12.0",
+        "ember-source": "3.28.0",
+      },
+    },
+  },
+]
+`;
+
+exports[`lib/auto-scenario-config-for-ember dependency version heuristics using ember-source < 4.0 with ember-cli < 5.0 does not add ember-cli as dependency 1`] = `
+Array [
+  Object {
+    "name": "default",
+    "npm": Object {
+      "devDependencies": Object {},
+    },
+  },
+  Object {
+    "allowedToFail": true,
+    "name": "ember-beta",
+    "npm": Object {
+      "devDependencies": Object {
+        "ember-source": "https://emberjs.example.com/beta-1234.tgz",
+      },
+    },
+  },
+  Object {
+    "allowedToFail": true,
+    "name": "ember-canary",
+    "npm": Object {
+      "devDependencies": Object {
+        "ember-source": "https://emberjs.example.com/canary-1234.tgz",
+      },
+    },
+  },
+  Object {
+    "name": "ember-release",
+    "npm": Object {
+      "devDependencies": Object {
+        "ember-source": "https://emberjs.example.com/release-1234.tgz",
+      },
+    },
+  },
+  Object {
+    "name": "ember-3.28.0",
+    "npm": Object {
+      "devDependencies": Object {
+        "ember-source": "3.28.0",
+      },
+    },
+  },
+]
+`;
+
 exports[`lib/auto-scenario-config-for-ember works with complex semver statement 1`] = `
 Array [
   Object {
