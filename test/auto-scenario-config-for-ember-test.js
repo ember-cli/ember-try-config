@@ -79,4 +79,42 @@ describe('lib/auto-scenario-config-for-ember', () => {
       expect(config.scenarios).toMatchSnapshot();
     });
   });
+
+  describe('dependency version heuristics', () => {
+    test('using ember-source < 4.0 adds ember-cli as dependency', async () => {
+      const project = {
+        dependencies() {
+          return {
+            'ember-cli': '^5.1.0',
+          };
+        },
+      };
+
+      const config = await autoScenarioConfigForEmber({
+        versionCompatibility: { ember: '3.28.0' },
+        getChannelURL: fakeGetChannelUrl,
+        project,
+      });
+
+      expect(config.scenarios).toMatchSnapshot();
+    });
+
+    test('using ember-source < 4.0 with ember-cli < 5.0 does not add ember-cli as dependency', async () => {
+      const project = {
+        dependencies() {
+          return {
+            'ember-cli': '^4.12.1',
+          };
+        },
+      };
+
+      const config = await autoScenarioConfigForEmber({
+        versionCompatibility: { ember: '3.28.0' },
+        getChannelURL: fakeGetChannelUrl,
+        project,
+      });
+
+      expect(config.scenarios).toMatchSnapshot();
+    });
+  });
 });
