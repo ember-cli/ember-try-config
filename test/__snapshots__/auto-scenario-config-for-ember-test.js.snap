@@ -15,6 +15,9 @@ Array [
       "devDependencies": Object {
         "ember-source": "https://emberjs.example.com/beta-1234.tgz",
       },
+      "overrides": Object {
+        "ember-source": "$ember-source",
+      },
     },
   },
   Object {
@@ -23,6 +26,9 @@ Array [
     "npm": Object {
       "devDependencies": Object {
         "ember-source": "https://emberjs.example.com/canary-1234.tgz",
+      },
+      "overrides": Object {
+        "ember-source": "$ember-source",
       },
     },
   },
