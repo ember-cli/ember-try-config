@@ -51,9 +51,6 @@ describe('lib/auto-scenario-config-for-ember', () => {
             devDependencies: {
               'ember-source': 'https://emberjs.example.com/release-1234.tgz',
             },
-            overrides: {
-              'ember-source': '$ember-source',
-            },
           },
         },
         {
@@ -61,9 +58,6 @@ describe('lib/auto-scenario-config-for-ember', () => {
           npm: {
             devDependencies: {
               'ember-source': '2.18.0',
-            },
-            overrides: {
-              'ember-source': '$ember-source',
             },
           },
         },
